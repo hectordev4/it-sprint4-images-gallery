@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { Image } from '../../models/image.model';
-import { ImageItemComponent } from '../image-item/image-item';
+import { ImageItem } from '../image-item/image-item';
 
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [ImageItemComponent],
+  imports: [ImageItem],
   template: `
     <div class="gallery-container">
       <header class="gallery-header">
@@ -32,7 +32,7 @@ import { ImageItemComponent } from '../image-item/image-item';
     .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
   `]
 })
-export class GalleryComponent {
+export class Gallery {
   // Using an Angular Signal to store our mock data reactively
   images = signal<Image[]>([
     { id: '1', url: 'https://picsum.photos/id/10/600/600', alt: 'Beautiful seashore landscape' },
