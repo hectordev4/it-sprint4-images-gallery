@@ -19,7 +19,6 @@ import { ImageItem } from '../image-item/image-item';
     </div>
   `,
   styles: [`
-    /* Temporary basic styles until Iteration 2 (Tailwind) */
     .gallery-container { padding: 2rem; font-family: sans-serif; }
     .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
   `]

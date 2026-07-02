@@ -35,8 +35,6 @@ import { Image } from '../../models/image.model';
       height: 416px; 
     }
     
-    /* The directive applies 'position: absolute' to the img. 
-       We ensure it fills the card and maintains aspect ratio. */
     .image-card img {
       object-fit: cover; 
     }
@@ -59,6 +57,5 @@ import { Image } from '../../models/image.model';
 export class ImageItem {
   image = input.required<Image>();
   isFeatured = input<boolean>(false);
-  // Default to false. Set to true only for images in the initial viewport.
   priority = input<boolean>(false);
 }
